@@ -1,5 +1,5 @@
 
-var elem = document.getElementById("name");
+/*var elem = document.getElementById("name");
 
 function person(name, age, color) {
   this.name = name;
@@ -23,9 +23,9 @@ function changeColour() {
   }
 }
 
-changeColour();
+changeColour();*/
 
-function addParagraph(){
+/*function addParagraph(){
   //creating a new paragraph
   var p = document.createElement("p");
   var node = document.createTextNode("This is a new line of text - can I use this to populate a table from an array (and if I can populat ethe array from a CSV file I could simplify the preacher and events lists)");
@@ -37,7 +37,7 @@ function addParagraph(){
   div.appendChild(p);
 }
 
-addParagraph();
+addParagraph();*/
 
 function addList(){
   var events = new Array("Sunday Service", "Girls Brigade","Guides","Coffee Mornings");
@@ -50,7 +50,44 @@ function addList(){
     var ul = document.getElementById("list");
     ul.appendChild(el);
     i++;
-  }bert
+  }
 }
 
-addList();
+//window.onload=addList();
+
+/*var t = setInterval(move, 10);
+// starting position
+var pos = 0;
+//our box element
+var box = document.getElementById("box");
+
+function move() {
+  if (pos>=150){
+    clearInterval(t);
+  }
+  else {
+    pos +=  1;
+    box.style.left = pos+"px"; //px = pixels
+  }
+}*/
+
+//event handler code
+function show() {
+  alert("Hi there");
+}
+
+var btn = document.getElementById("demo");
+btn.addEventListener("click", myFunction);
+btn.addEventListener("mouseover",show);
+
+function myFunction() {
+  alert(Math.random());
+  btn.removeEventListener("click", myFunction);
+}
+
+
+
+function change() {
+ var x = document.getElementById("EnterName");
+ x.value= x.value.toUpperCase();
+}
