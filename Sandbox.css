@@ -1,11 +1,18 @@
 ﻿
     header{
+        //position:fixed;
         text-align:center;
-        background:-webkit-linear-gradient(#FFFFFF 98%, #000000);
+        padding-top:5px;
     }
 
     .head{
         text-decoration:underline overline;
+    }
+
+    body{
+      background-image:url("mouse.jpg");
+      background-size: cover;
+      color:white;
     }
 
     #name{
@@ -48,25 +55,50 @@
 }*/
 
     h1 {
+        color:white;
         font-size:250%;
         font-variant:small-caps;
         text-align:center;
-        text-shadow: 5px 2px 4px #DDDDDD;
+        //text-shadow: 5px 2px 4px #DDDDDD;
         text-transform:capitalize;
     }
 
     h2 {
         font-variant:small-caps;
-        text-shadow: 5px 2px 4px #DDDDDD
+        color:white;
+        //text-shadow: 5px 2px 4px #DDDDDD
     }
 
-    #Welcome {
-        width:100%;
+    .Welcome {
+
+      margin:2.5%;
+      width:46%;
     }
 
-    #Welcome .first strong {
+    .Welcome .first strong {
         color:red;
     }
+
+.WIP{
+    margin:2.5%;
+    width:46%;
+}
+
+.Areas{
+    margin:2.5%;
+    width:95%;
+}
+
+.WorkArea{
+    margin:2.5%;
+    width:95%;
+}
+
+.footer{
+font-size:10px;
+    margin:2.5%;
+    width:95%;
+}
 
     body {
         font-family: Tahoma;
@@ -87,7 +119,7 @@
         text-shadow: 5px 2px 4px #DDDDDD;
         /*color:white;*/
         /*background: black;
-        transition: width 3s;
+,   px  px rgba(,,,      transition: width 3s;
         -webkit-transition: background-color 2s ease-in;
         background-color: black;
         height:100px;
@@ -129,4 +161,22 @@
       background: red;
       position: absolute;
     }
-    
+
+    #thumbnail{
+      background-color:rgba(4,4,4,0.5);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .fullCard{
+      border:0px solid #ccc;
+      border-radius:5px;
+      padding:2px;
+    }
+
+    .cardText{
+      margin-bottom:30px;
+    }
+
+    .cardContent{
+      padding:8px;
+    }
