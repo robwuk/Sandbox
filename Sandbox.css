@@ -69,10 +69,15 @@
         //text-shadow: 5px 2px 4px #DDDDDD
     }
 
-    .Welcome {
+    #boxcontainer{
+          display:flex;
+          justify-content:space-between;
+    }
 
-      margin:2.5%;
-      width:46%;
+    .Welcome {
+      margin-top: 1%;
+    flex-basis:45%;
+    border:2px solid rgba(0,255,0,1);
     }
 
     .Welcome .first strong {
@@ -80,18 +85,23 @@
     }
 
 .WIP{
-    margin:2.5%;
-    width:46%;
+
+    margin-left:1%;
+    margin-right:1%;
+    margin-top:1%;
+  flex-basis:45%;
+  border:2px solid rgba(255,0,0,1);
 }
 
 .Areas{
-    margin:2.5%;
-    width:95%;
+    margin-top:1%;
+    flex-basis:45%;
+    border:2px solid rgba(0,0,255,1);
 }
 
 .WorkArea{
-    margin:2.5%;
-    width:95%;
+    margin:1%;
+    border:2px solid rgba(255,255,255,1);
 }
 
 .footer{
@@ -168,7 +178,6 @@ font-size:10px;
     }
 
     .fullCard{
-      border:0px solid #ccc;
       border-radius:5px;
       padding:2px;
     }
