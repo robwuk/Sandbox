@@ -5,12 +5,6 @@ class App extends React.Component {
         return (
             <div className="app">
               <Title />
-/*              <MessageList
-                  roomId={this.state.roomId}
-                  messages={this.state.messages} />
-              <SendMessageForm
-                  sendMessage={this.sendMessage} />
-            </div>*/
         );
     }
 }
