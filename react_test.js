@@ -1,46 +1,21 @@
 'use strict';
 
-const e = React.createElement;
-
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
+class App extends React.Component {
+    render() {
+        return (
+            <div className="app">
+              <Title />
+/*              <MessageList
+                  roomId={this.state.roomId}
+                  messages={this.state.messages} />
+              <SendMessageForm
+                  sendMessage={this.sendMessage} />
+            </div>*/
+        );
     }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
+}
+function Title() {
+  return <p className="title">My awesome chat app</p>
 }
 
-/*class titleText extends React.Component(){
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (<div>React Test - from react_test.js</div>)
-  }
-}
-
-class headerConfig extends React.Component(){
-  constructor(props){
-    super(props);
-  }
-  render(){
-    return(<header><h1>test</h1></header>);
-  }
-}*/
-const name = 'Josh Perez';
-const element = <h1>Hello, {name}</h1>;
-const domContainer = document.querySelector('#header_1');
-ReactDOM.render(element,domContainer);
-const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(LikeButton), domContainer);
+ReactDOM.render(<App />, document.getElementById('root'));
