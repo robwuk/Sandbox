@@ -9,7 +9,7 @@ class App extends React.Component {
     }
 }
 function Title() {
-  return <p className="title">My awesome chat app</p>
+  return )<p className="title">My awesome chat app</p>);
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
