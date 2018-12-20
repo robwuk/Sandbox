@@ -1,4 +1,9 @@
-﻿
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}﻿
+
     header{
         //position:fixed;
         text-align:center;
@@ -13,6 +18,7 @@
       /*background-image:url("mouse.jpg");
       background-size: cover;*/
       color:black;
+      font-family: "Roboto";
     }
 
     #name{
@@ -53,21 +59,6 @@
    right: 5px;
    color: red;
 }*/
-
-    h1 {
-        color:white;
-        font-size:250%;
-        font-variant:small-caps;
-        text-align:center;
-        //text-shadow: 5px 2px 4px #DDDDDD;
-        text-transform:capitalize;
-    }
-
-    h2 {
-        font-variant:small-caps;
-        color:white;
-        //text-shadow: 5px 2px 4px #DDDDDD
-    }
 
     #boxcontainer{
           display:flex;
@@ -110,9 +101,6 @@ font-size:10px;
     width:95%;
 }
 
-    body {
-        font-family: Tahoma;
-    }
 
     ul {
         font-style:italic;
@@ -188,6 +176,7 @@ font-size:10px;
 
     .cardContent{
       padding:8px;
+
     }
 
     /*set up swatch common CSS*/
@@ -209,43 +198,115 @@ font-size:10px;
     }
 
     /*swatch modfiers*/
-    .swatch-red{
+    .swatch--red{
       background-color: #BA1F1F;
     }
 
-    .swatch-frozenwhite{
+    .swatch--frozenwhite{
       background-color: #E8E7E3;
     }
 
-    .swatch-blazerblue{
+    .swatch--blazerblue{
       background-color: #141731;
     }
 
-    .swatch-moondustsilver{
+    .swatch--moondustsilver{
       background-color: #A6A9AA;
     }
 
-    .swatch-guard{
+    .swatch--guard{
       background-color: #898A80;
     }
-
-    .swatch-solar{
+    .swatch--solar{
       background-color: #CCC65D;
     }
 
-    .swatch-deepimpactblue{
+    .swatch--deepimpactblue{
       background-color: #1D2F82;
     }
 
-    .swatch-shadowblack{
+    .swatch--shadowblack{
       background-color: #181A1A;
     }
 
-    .swatch-magnetic{
+    .swatch--magnetic{
       background-color: #5F625F;
     }
 
     /*change font-awesome icon color*/
     i {
       color: white;
+    }
+
+    .fa-phone{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+    .boxedicon{
+      border: solid 1px #A6A9AA;
+      padding-left: 3px;
+      padding-right: 3px;
+      color:#003E78;
+    }
+
+    .contrast--high{
+      background-color: #000000;
+      color:yellow;
+    }
+
+    .lightbluebutton{
+      background-color: #017EDB;
+      text-align: center;
+      color: white;
+    }
+
+    .lightbluebutton--body{
+      width:20vw;
+      height:6vh;
+      border-radius: 5px;
+      line-height: 6vh;
+    }
+
+    .lightbluebutton--callout{
+      width:21vw;
+      height:8vh;
+      border-radius: 5px;
+      line-height: 8vh;
+    }
+
+    .billboard{
+      left:0;
+      width:98vw;
+      height:80vh;
+      background-size: cover;
+      position: relative;
+    }
+
+    .billboard--main{
+      background-image: url("Billboard_Main.jpg");
+    }
+
+    .callout{
+      width:24vw;
+      height:25vw;
+      top: 10vw;
+      background-color: hsla(360,100%,100%,.80);
+      color: black;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-170%,-50%);
+    }
+
+    .callout__text{
+      margin-left: 1.5vw;
+      top: 1.5vw;
+
+      transform: scaleX(0.8);
+      -webkit-transform: scaleX(0.8);
+    }
+
+    .callout__text-head{
+      font-size: 200%;
+      font-weight: bold;
     }
