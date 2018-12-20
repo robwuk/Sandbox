@@ -10,9 +10,9 @@
     }
 
     body{
-      background-image:url("mouse.jpg");
-      background-size: cover;
-      color:white;
+      /*background-image:url("mouse.jpg");
+      background-size: cover;*/
+      color:black;
     }
 
     #name{
@@ -188,4 +188,64 @@ font-size:10px;
 
     .cardContent{
       padding:8px;
+    }
+
+    /*set up swatch common CSS*/
+    .swatch{
+      width:3.5vw;
+      height:3.5vw;
+      border-radius: 50%;
+      border-color: #FFFFFF;
+      border-width: thick;
+      border-style: solid;
+      -webkit-border-radius: 50%;
+      -webkit-border-color: #FFFFFF;
+      -webkit-border-width: thick;
+      -webkit-border-style: solid;
+      text-align: center;
+      line-height: 3.5vw;
+      color: #FFFFFF;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    }
+
+    /*swatch modfiers*/
+    .swatch-red{
+      background-color: #BA1F1F;
+    }
+
+    .swatch-frozenwhite{
+      background-color: #E8E7E3;
+    }
+
+    .swatch-blazerblue{
+      background-color: #141731;
+    }
+
+    .swatch-moondustsilver{
+      background-color: #A6A9AA;
+    }
+
+    .swatch-guard{
+      background-color: #898A80;
+    }
+
+    .swatch-solar{
+      background-color: #CCC65D;
+    }
+
+    .swatch-deepimpactblue{
+      background-color: #1D2F82;
+    }
+
+    .swatch-shadowblack{
+      background-color: #181A1A;
+    }
+
+    .swatch-magnetic{
+      background-color: #5F625F;
+    }
+
+    /*change font-awesome icon color*/
+    i {
+      color: white;
     }
