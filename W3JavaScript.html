@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>W3C JavaScrpt</h1>
+<p>this page allows me to trial JavaScript as taught in the W3Schools Javascript <a href="https://www.w3schools.com/js" target="_blank">curriculum</a>.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "<h2>This only exists as JavaScript</h2>";
+</script>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = '<h2>This was changed on click</h2>'">Try it</button>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+
+
+<p id="demo1">x = <span id="x"></span></p>
+<p id="demo2">y = <span id="y"></span></p>
+<button type="button" onclick="percentageAnswer()">Click For Answer</button>
+<p id="demo3">percentage => (x/y) * 100 = <span id="percent"></span></p>
+
+<br/>
+
+<p id="demo1">radius = <span id="radius"></span></p>
+<p id="demo2">pi = <span id="pi"></span></p>
+<button type="button" onclick="areaAnswer()">Click For Answer</button>
+<p id="demo3">Area of Circle => 'pi * radius<sup>2</sup>' = <span id="area"></span></p>
+
+<script>
+  var x = Math.random() * 100;
+  var y = Math.random() * 100;
+  var radius = Math.random() * 100;
+  var pi = Math.PI;
+  document.getElementById("x").innerHTML = x;
+  document.getElementById("y").innerHTML = y;
+  document.getElementById("radius").innerHTML = radius;
+  document.getElementById("pi").innerHTML = pi;
+
+function percentageAnswer() {
+  document.getElementById("percent").innerHTML = percentage(x , y);
+}
+
+function areaAnswer() {
+  document.getElementById("area").innerHTML = area(radius , pi);
+}
+
+function percentage(x, y) {
+  return (x/y) * 100;
+}
+
+function area(x,y) {
+  return (x**2) * y;
+}
+</script>
+
+</body>
+</html>

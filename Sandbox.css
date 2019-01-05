@@ -15,9 +15,9 @@
     }
 
     body{
-      /*background-image:url("mouse.jpg");
-      background-size: cover;*/
-      color:black;
+      background-image:url("mouse.jpg");
+      background-size: cover;
+      color:white;
       font-family: "Roboto";
     }
 

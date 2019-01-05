@@ -25,7 +25,7 @@ function changeColour() {
 
 changeColour();*/
 
-/*function addParagraph(){
+function addParagraph(){
   //creating a new paragraph
   var p = document.createElement("p");
   var node = document.createTextNode("This is a new line of text - can I use this to populate a table from an array (and if I can populat ethe array from a CSV file I could simplify the preacher and events lists)");
@@ -37,7 +37,7 @@ changeColour();*/
   div.appendChild(p);
 }
 
-addParagraph();*/
+addParagraph();
 
 function addList(){
   var events = new Array("Sunday Service", "Girls Brigade","Guides","Coffee Mornings");
