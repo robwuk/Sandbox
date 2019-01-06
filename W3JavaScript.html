@@ -5,17 +5,15 @@
 <h1>W3C JavaScrpt</h1>
 <p>this page allows me to trial JavaScript as taught in the W3Schools Javascript <a href="https://www.w3schools.com/js" target="_blank">curriculum</a>.</p>
 
-<p id="demo"></p>
+<p id="demoText"></p>
 
 <script>
-document.getElementById("demo").innerHTML = "<h2>This only exists as JavaScript</h2>";
+document.getElementById("demoText").innerHTML = "<h2>This only exists as JavaScript</h2>";
 </script>
 
-<button type="button" onclick="document.getElementById('demo').innerHTML = '<h2>This was changed on click</h2>'">Try it</button>
+<button type="button" onclick="document.getElementById('demoText').innerHTML = '<h2>This was changed on click</h2>'">Change the above</button>
 
 <p>JavaScript code blocks are written between { and }</p>
-
-
 
 <p id="demo1">x = <span id="x"></span></p>
 <p id="demo2">y = <span id="y"></span></p>
@@ -29,22 +27,23 @@ document.getElementById("demo").innerHTML = "<h2>This only exists as JavaScript<
 <button type="button" onclick="areaAnswer()">Click For Answer</button>
 <p id="demo3">Area of Circle => 'pi * radius<sup>2</sup>' = <span id="area"></span></p>
 
+
 <script>
   var x = Math.random() * 100;
   var y = Math.random() * 100;
   var radius = Math.random() * 100;
   var pi = Math.PI;
-  document.getElementById("x").innerHTML = x;
-  document.getElementById("y").innerHTML = y;
-  document.getElementById("radius").innerHTML = radius;
-  document.getElementById("pi").innerHTML = pi;
+  document.getElementById("x").innerHTML = x.toFixed(2);
+  document.getElementById("y").innerHTML = y.toFixed(2);
+  document.getElementById("radius").innerHTML = radius.toFixed(2);
+  document.getElementById("pi").innerHTML = pi.toFixed(2);
 
 function percentageAnswer() {
-  document.getElementById("percent").innerHTML = percentage(x , y);
+  document.getElementById("percent").innerHTML = percentage(x , y).toFixed(2);
 }
 
 function areaAnswer() {
-  document.getElementById("area").innerHTML = area(radius , pi);
+  document.getElementById("area").innerHTML = area(radius , pi).toFixed(2);
 }
 
 function percentage(x, y) {
@@ -53,6 +52,54 @@ function percentage(x, y) {
 
 function area(x,y) {
   return (x**2) * y;
+}
+</script>
+
+<br/>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demoObject"></p>
+
+<script>
+// Create an object:
+var events = {
+  event:"New Year Lunch",
+  date:"12/01/2019",
+  time:"12:30pm",
+  cost:"4.00",
+  dateTime: function() {
+    return this.date + " @ " + this.time;
+  }
+};
+// Display some data from the object:
+document.getElementById("demoObject").innerHTML = "<h3>Special events:</h3><b>\t" + events.event + "</b>: " + events.dateTime()  + " \\ cost £" + events.cost;
+</script>
+
+
+<button onclick="displayDate()">The time is?</button>
+
+<p id="demoClick"></p>
+
+<script>
+function displayDate() {
+  alert(Date());
+}
+</script>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demoString">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demoString").innerHTML;
+  var txt = str.replace(/Microsoft/g,"W3Schools");
+  document.getElementById("demoString").innerHTML = txt;
 }
 </script>
 
